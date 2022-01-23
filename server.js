@@ -28,7 +28,10 @@ app.post("/api/notes",(req,res)=>{
 app.delete("/api/notes",(req,res)=>{
     let data = fs.readFileSync(path.resolve(__dirname,"db/db.json")).toString()
     let saveNotes = JSON.parse(data)
-    saveNotes.push(req.body)
+        saveNotes.filter(note => {
+        return note.title != req.body.title;
+    })
+    console.log(req.body)
     let datatoSave = JSON.stringify(saveNotes)
     fs.writeFileSync(path.resolve(__dirname,"db/db.json"),datatoSave)
 
