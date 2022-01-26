@@ -5,7 +5,9 @@
 Simple note taker that uses express. Utilizes front and backend. 
 
 [Link to Github Repository](https://github.com/14Kappaman/Express-Note-Taker)
+
 [Link to Heroku](https://evening-waters-88964.herokuapp.com/)
+
 ![Screenshot of Application](/Screenshot.png)
 
 ## Table of Contents
