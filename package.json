@@ -4,12 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start":"node server.js",
+    "start":"nodemon server.js",
+  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4", 
+    "morgan": "1.10.0",
+    "nodemon": "2.0.15"
+  } 
 }
